@@ -6,18 +6,25 @@
     <title>Arb Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
     <h1>Arb Calculator</h1>
 
     <section>
-        <select name="How many Outcomes" id="Outcome_option">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-        </select>
+        <div>
+            How many outcomes does your arb have?
+            <select name="How many Outcomes" id="outcome_option">
+                <option value=2>2</option>
+                <option value=3>3</option>
+                <option value=4>4</option>
+            </select>
+        </div>
+
+        <div id="input_outcome">
+            <input id="a" type="number"> <br>
+            <input id="b" type="number"> <br>
+        </div>
     </section>
 </body>
 </html>
