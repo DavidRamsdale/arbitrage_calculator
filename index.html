@@ -9,18 +9,15 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    <h1>Arb Calculator</h1>
+    
+    <div class="jumbotron">
+        <h1>Arb Calculator</h1>
+    </div>
+    
 
-    <section>
-        <div>
+    <div class= "card">
 
-            Total Stake: <input type="text" id="total_stake"> 
-            Profit: <input type="text" disabled id="profit">
-            %Profit: <input type="text" disabled id="%profit">    
-
-        </div>
-
-        <div>
+        <div class= "card-header">
             How many outcomes does your arb have?
             <select name="How many Outcomes" id="outcome_option">
                 <option value=2>2</option>
@@ -28,13 +25,24 @@
             </select>
         </div>
 
-        <div id="input_outcome">
-            Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
-            Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br>
+        <div class= "card-body">
+            <div>
+
+                Total Stake: <input type="text" id="total_stake"> 
+                Profit: <input type="text" disabled id="profit">
+                %Profit: <input type="text" disabled id="%profit">    
+
+            </div>
+
+            <div id="input_outcome">
+                Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
+                Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br>
+                <button id= "button" class= "btn btn-primary">Calculate</button>
+            </div>
         </div>
 
-        <button id= "button">Calculate</button>
-    </section>
+        
+    </div>
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
