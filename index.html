@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-    
+
     <div class="jumbotron">
         <h1>Arb Calculator</h1>
     </div>
     
 
-    <div class= "card">
+    <div class= "card w-75">
 
         <div class= "card-header">
             How many outcomes does your arb have?
@@ -27,16 +27,11 @@
 
         <div class= "card-body">
             <div>
-
                 Total Stake: <input type="text" id="total_stake"> 
                 Profit: <input type="text" disabled id="profit">
-                %Profit: <input type="text" disabled id="%profit">    
-
-            </div>
-
-            <div id="input_outcome">
+                %Profit: <input type="text" disabled id="%profit"><br>    
                 Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
-                Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br>
+                Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br> <br>
                 <button id= "button" class= "btn btn-primary">Calculate</button>
             </div>
         </div>

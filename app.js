@@ -1,15 +1,15 @@
 
 function formSelector () {
-    if (selection.value === "2"){
-        document.getElementById("input_outcome").innerHTML = `Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
-        Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br> <button id= "button" class= "btn btn-primary">Calculate</button>`;
-        }
+    // if (selection.value === "2"){
+    //     document.getElementById("input_outcome").innerHTML = `Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
+    //     Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br><br> <button id= "button" class= "btn btn-primary">Calculate</button>`;
+    //     }
 
-    if (selection.value === "3"){
-    document.getElementById("input_outcome").innerHTML = `Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
-    Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br>
-    Outcome 3: <input id="c" type="number"> Stake 3: <input id="stake3" type="text" disabled value=""> Return: <input type="text"> <br> <button id= "button" class= "btn btn-primary">Calculate</button>`
-    }
+    // if (selection.value === "3"){
+    // document.getElementById("input_outcome").innerHTML = `Outcome 1: <input id="a" type="number"> Stake 1: <input id="stake1" type="text" disabled value=""> Return: <input type="text"> <br>
+    // Outcome 2: <input id="b" type="number"> Stake 2: <input id="stake2" type="text" disabled value=""> Return: <input type="text"> <br>
+    // Outcome 3: <input id="c" type="number"> Stake 3: <input id="stake3" type="text" disabled value=""> Return: <input type="text"> <br><br> <button id= "button" class= "btn btn-primary">Calculate</button>`
+    // }
 
 }
 
