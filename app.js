@@ -3,10 +3,18 @@ function formSelector () {
         outcome = document.getElementById("outcomes");
         outcome.innerHTML += `<p>Outcome 3: <input class="number" type="number"> Stake 3: <input id="stake3" type="text" disabled="" value=""> Return: <input type="text"> <br> <br> </p>`;
         selector_switch = true;
+
+        header = document.getElementById("header");
+        header.style.background = 'lightseagreen';
+        header.innerHTML = `<h1>Arb Calculator</h1>`; 
     }
     if (selection.value === "2" && selector_switch === true){
         outcome.removeChild(outcome.lastElementChild);
         selector_switch = false;
+
+        header = document.getElementById("header");
+        header.style.background = 'lightseagreen';
+        header.innerHTML = `<h1>Arb Calculator</h1>`; 
     }
 }
 
@@ -17,12 +25,9 @@ function isDefined() {
 function calculate (numbers) {
     let combine_margin = 0;
     let total_stake = document.getElementById("total_stake").value;
-    console.log(numbers);
     numbers.forEach((item, index) => {
-        console.log(item);
         combine_margin += (1/parseInt(item.value));
     });
-    console.log(combine_margin);
     if (combine_margin <= 1) {
         numbers.forEach((item, index) => {
             let stake = document.getElementById(`stake${index + 1}`).value = (total_stake * (1/parseInt(item.value)))/combine_margin;
