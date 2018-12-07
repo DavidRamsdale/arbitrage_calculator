@@ -25,8 +25,9 @@ function isDefined() {
 function calculate (numbers) {
     let combine_margin = 0;
     let total_stake = document.getElementById("total_stake").value;
+    console.log(combine_margin);
     numbers.forEach((item, index) => {
-        combine_margin += (1/parseInt(item.value));
+        combine_margin += (1/(item.value));
     });
     if (combine_margin <= 1) {
         numbers.forEach((item, index) => {
