@@ -25,13 +25,17 @@ function isDefined() {
 function calculate (numbers) {
     let combine_margin = 0;
     let total_stake = document.getElementById("total_stake").value;
-    console.log(combine_margin);
     numbers.forEach((item, index) => {
         combine_margin += (1/(item.value));
     });
     if (combine_margin <= 1) {
         numbers.forEach((item, index) => {
-            let stake = document.getElementById(`stake${index + 1}`).value = (total_stake * (1/parseInt(item.value)))/combine_margin;
+
+            let stake = document.getElementById(`stake${index + 1}`).value = (total_stake * (1/(item.value))/combine_margin);
+            console.log(stake);
+            console.log(item.value);
+            console.log(combine_margin);
+            document.getElementById(`return${index + 1}`).value = stake* item.value;
         });
         document.getElementById("%profit").value = (1 - combine_margin)*100;
         document.getElementById("profit").value = (1 - combine_margin)*total_stake;
