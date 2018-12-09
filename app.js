@@ -1,7 +1,7 @@
 function formSelector () {
     if (selection.value === "3" && selector_switch === false){
         outcome = document.getElementById("outcomes");
-        outcome.innerHTML += `<p>Outcome 3: <input class="number" type="number"> Stake 3: <input id="stake3" type="text" disabled="" value=""> Return: <input type="text"> <br> <br> </p>`;
+        outcome.innerHTML += `<p>Outcome 3: <input class="number" type="number"> Stake 3: <input id="stake3" type="text" disabled="" value=""> Return: <input type="text" disabled id="return3"> <br> </p>`;
         selector_switch = true;
 
         header = document.getElementById("header");
