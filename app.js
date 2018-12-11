@@ -32,13 +32,13 @@ function calculate (numbers) {
         numbers.forEach((item, index) => {
 
             let stake = document.getElementById(`stake${index + 1}`).value = (total_stake * (1/(item.value))/combine_margin);
-            console.log(stake);
-            console.log(item.value);
-            console.log(combine_margin);
             document.getElementById(`return${index + 1}`).value = stake* item.value;
         });
-        document.getElementById("%profit").value = (1 - combine_margin)*100;
-        document.getElementById("profit").value = (1 - combine_margin)*total_stake;
+        profit = document.getElementById("profit").value = (total_stake/combine_margin) - total_stake;
+        document.getElementById("%profit").value = ((parseFloat(total_stake) + parseFloat(profit))/parseFloat(total_stake) -1)*100;
+        console.log(profit);
+        console.log(total_stake);
+        
         header = document.getElementById("header");
         header.style.background = "Green";
         header.innerHTML = `<h1>Arb Calculator</h1><br><h2>Arb Exists </h2>`; 
